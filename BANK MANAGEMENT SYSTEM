@@ -54,7 +54,7 @@ public:
 
     void saveAccountDetails() {
     	system("cls");
-        ofstream file("C:\\Users\\Anami\\Desktop\\Projects\\Bank\\details.txt",ios::app); 
+        ofstream file("details.txt",ios::app); 
         file << accountNumber << endl; 
         file << accountHolderName << endl;
         file << balance << endl; 
@@ -63,7 +63,7 @@ public:
 
     bool loadAccountDetails(const string &accNumber) {
     	system("cls");
-        ifstream file("C:\\Users\\Anami\\Desktop\\Projects\\Bank\\details.txt"); 
+        ifstream file("\details.txt"); 
         if (file.is_open()) {
             getline(file, accountNumber); 
             getline(file, accountHolderName); 
